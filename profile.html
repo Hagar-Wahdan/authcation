@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Profile | Laptop Store</title>
+
+    <link rel="stylesheet" href="css/pages/auth.css">
+</head>
+
+<body>
+
+    <main class="profile-container">
+
+        <header class="profile-header">
+            <h1>My Account</h1>
+            <button id="logoutButton" class="logout-button">
+                Logout
+            </button>
+        </header>
+
+        <section class="profile-card">
+
+            <h2>Personal Information</h2>
+
+            <p class="subtitle">
+                View and update your account information.
+            </p>
+
+            <form id="profileForm">
+
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+
+                    <input type="text"
+                        id="fullName"
+                        name="full_name"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+
+                    <input type="email"
+                        id="email"
+                        name="email"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+
+                    <input type="tel"
+                        id="phone"
+                        name="phone"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label>Account Created</label>
+
+                    <p id="createdAt">Loading...</p>
+                </div>
+
+                <p id="message" class="message"></p>
+
+                <button type="submit" class="auth-button">
+                    Save Changes
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <script type="module" src="js/pages/profile.js"></script>
+
+</body>
+</html>
